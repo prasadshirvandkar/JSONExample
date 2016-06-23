@@ -1,25 +1,40 @@
 {
-    "People" : {
+    "Songs" : {
         
-        "Person1":{
-            "Name" : "Prasad",
-            "Age" : "20",
+        "Song1":{
+            "Name" : "Lean On",
+            "Artist" : "Major Lazer,Dj Snake",
             "Image" : "nature"
         },
-        "Person2":{
-            "Name" : "Prasad",
-            "Age" : "20",
-            "Image" : "screen"
+        "Song2":{
+            "Name" : "Faded",
+            "Artist" : "Alan Walker",
+            "Image" : "nature1"
         },
-        "Person3":{
-            "Name" : "Prasad",
-            "Age" : "20",
-            "Image" : "shazam"
+        "Song3":{
+            "Name" : "Don't Let Me Down",
+            "Artist" : "Daya, The ChainSmokers",
+            "Image" : "images"
         },
-        "Person4":{
-            "Name" : "Prasad",
-            "Age" : "20",
-            "Image" : "sofascore"
+        "Song4":{
+            "Name" : "This One's For You",
+            "Artist" : "2David Guetta, Zara Larsson",
+            "Image" : "nature"
+        },
+        "Song5":{
+            "Name" : "I Took A Pill In Ibiza",
+            "Artist" : "Mike Posner",
+            "Image" : "nature1"
+        },
+        "Song6":{
+            "Name" : "This Is What You Came For",
+            "Artist" : "Calvin Harris, Rihanna",
+            "Image" : "images"
+        },
+        "Song7":{
+            "Name" : "Sing Me To Sleep",
+            "Artist" : "Alan Walker",
+            "Image" : "nature1"
         }
         
     }

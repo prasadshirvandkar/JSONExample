@@ -6,11 +6,44 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--JSONPractice-->
+        <!--View Controller-->
+        <scene sceneID="WtG-kh-BU4">
+            <objects>
+                <viewController storyboardIdentifier="A" id="MAi-1S-p32" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1q8-Ye-cNY"/>
+                        <viewControllerLayoutGuide type="bottom" id="88L-4n-SUn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8P6-ij-IKN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Second ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vak-yD-hpX">
+                                <rect key="frame" x="20" y="263" width="560" height="73"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vak-yD-hpX" firstAttribute="centerY" secondItem="8P6-ij-IKN" secondAttribute="centerY" id="9jg-Bk-PKp"/>
+                            <constraint firstItem="vak-yD-hpX" firstAttribute="centerX" secondItem="8P6-ij-IKN" secondAttribute="centerX" id="afk-oR-jat"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelsq" destination="vak-yD-hpX" id="Wwb-Vi-QTw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ST-qM-eyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="-383"/>
+        </scene>
+        <!--JSON Songs-->
         <scene sceneID="LUr-cQ-6FS">
             <objects>
                 <tableViewController id="Yhb-40-d9u" customClass="ViewController" customModule="JsonPractive" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="165" sectionHeaderHeight="28" sectionFooterHeight="28" id="pYL-Yt-lme">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="165" sectionHeaderHeight="28" sectionFooterHeight="28" id="pYL-Yt-lme">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -22,7 +55,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="164"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRu-GL-hMe">
+                                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nature" translatesAutoresizingMaskIntoConstraints="NO" id="mRu-GL-hMe">
                                             <rect key="frame" x="0.0" y="-5" width="600" height="169"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vY-s5-WlX">
@@ -59,7 +92,7 @@
                             <outlet property="delegate" destination="Yhb-40-d9u" id="Lcq-Eo-kwf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="JSONPractice" id="5hz-jJ-eaK"/>
+                    <navigationItem key="navigationItem" title="JSON Songs" id="5hz-jJ-eaK"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWA-FT-5Tb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,4 +117,7 @@
             <point key="canvasLocation" x="222" y="269"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nature" width="256" height="144"/>
+    </resources>
 </document>

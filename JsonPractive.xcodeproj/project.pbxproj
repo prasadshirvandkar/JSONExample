@@ -51,7 +51,7 @@
 		22F3540B1D1C1DD6008176AD /* JsonPractiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonPractiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F3540F1D1C1DD6008176AD /* JsonPractiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPractiveUITests.swift; sourceTree = "<group>"; };
 		22F354111D1C1DD6008176AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22F354271D1C2450008176AD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		22F354271D1C2450008176AD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		22F354291D1C258E008176AD /* jsonfile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonfile.json; sourceTree = "<group>"; };
 		36A5930F38F13CF084C5242A /* Pods-JsonPractive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonPractive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JsonPractive/Pods-JsonPractive.debug.xcconfig"; sourceTree = "<group>"; };
 		A3A7505F767BCCC5DC8918DA /* Pods-JsonPractive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonPractive.release.xcconfig"; path = "Pods/Target Support Files/Pods-JsonPractive/Pods-JsonPractive.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		22F353E31D1C1DD5008176AD = {
 			isa = PBXGroup;
 			children = (
-				22F353EE1D1C1DD5008176AD /* JsonPractive */,
+				22F353EE1D1C1DD5008176AD /* JsonSongs */,
 				22F354031D1C1DD6008176AD /* JsonPractiveTests */,
 				22F3540E1D1C1DD6008176AD /* JsonPractiveUITests */,
 				22F353ED1D1C1DD5008176AD /* Products */,
@@ -105,7 +105,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22F353EE1D1C1DD5008176AD /* JsonPractive */ = {
+		22F353EE1D1C1DD5008176AD /* JsonSongs */ = {
 			isa = PBXGroup;
 			children = (
 				22F354271D1C2450008176AD /* Podfile */,
@@ -117,6 +117,7 @@
 				22F353FB1D1C1DD6008176AD /* Info.plist */,
 				22F354291D1C258E008176AD /* jsonfile.json */,
 			);
+			name = JsonSongs;
 			path = JsonPractive;
 			sourceTree = "<group>";
 		};

@@ -13,14 +13,17 @@ class ViewController: UITableViewController {
 
     var noofrows = 0
     
-    @IBOutlet weak var namelabel: NSLayoutConstraint!
     var namearray = [String]()
     var agearray = [String]()
     var imagearray = [String]()
-    
+    var identities = [String]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var nav = self.navigationController?.navigationBar
+        nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.orangeColor()]
+        identities = ["A","A","A","A","A"]
         parseJSON()
     }
     
@@ -29,16 +32,15 @@ class ViewController: UITableViewController {
         let path : String = NSBundle.mainBundle().pathForResource("jsonfile", ofType: "json") as String!
         let jsonData = NSData.init(contentsOfFile: path) as NSData!
         let readableJSOn = JSON(data: jsonData, options: NSJSONReadingOptions.MutableContainers, error: nil)
-        let nameja = readableJSOn["People","Person1","Name"]
         
-        noofrows = readableJSOn["People"].count
+        noofrows = readableJSOn["Songs"].count
 
         for i in 1...noofrows {
-            var person = "Person"
+            var person = "Song"
             person+="\(i)"
-            let namej = readableJSOn["People"]["Person1"]["Name"].string as String!
-            let age = readableJSOn["People"]["Person1"]["Age"].string as String!
-            let imagej = readableJSOn["People"]["Person1"]["Image"].string as String!
+            let namej = readableJSOn["Songs"][person]["Name"].string as String!
+            let age = readableJSOn["Songs"][person]["Artist"].string as String!
+            let imagej = readableJSOn["Songs"][person]["Image"].string as String!
             namearray.append(namej)
             agearray.append(age)
             imagearray.append(imagej)
@@ -52,9 +54,10 @@ class ViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell!
         
         if namearray.count != 0 {
+            
             let nameLabel = cell.viewWithTag(1) as! UILabel
             nameLabel.text = namearray[indexPath.row]
             
@@ -68,9 +71,17 @@ class ViewController: UITableViewController {
             //cell.detailTextLabel?.text = agearray[indexPath.row]
             
         }
-        
+    
         return cell
     }
-
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let vcName = identities[indexPath.row]
+        let viewController = storyboard?.instantiateViewControllerWithIdentifier(vcName)
+        self.navigationController?.pushViewController(viewController!, animated: true)
+        
+    }
+    
 }
 
