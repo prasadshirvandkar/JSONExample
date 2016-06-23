@@ -1,0 +1,26 @@
+{
+    "People" : {
+        
+        "Person1":{
+            "Name" : "Prasad",
+            "Age" : "20",
+            "Image" : "nature"
+        },
+        "Person2":{
+            "Name" : "Prasad",
+            "Age" : "20",
+            "Image" : "screen"
+        },
+        "Person3":{
+            "Name" : "Prasad",
+            "Age" : "20",
+            "Image" : "shazam"
+        },
+        "Person4":{
+            "Name" : "Prasad",
+            "Age" : "20",
+            "Image" : "sofascore"
+        }
+        
+    }
+}
